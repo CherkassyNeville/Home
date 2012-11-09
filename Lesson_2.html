@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Формы</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="header"></div>
+    <div class="content"></div>
+    <div class="footer"></div>
+</div>
+<form action="enter_data.php" methotd="post">
+    <fieldset>
+        <legend>
+            <font size="3"><strong>Расскажите немного о себе:</strong></font>
+        </legend>
+    <p>Имя</p><input type="text" size="25" maxlength="32"/>
+        <p>Фамилия</p><input type="text" size="25" maxlength="32"/><br/>
+        Выберите Ваш пол:<input type="radio" name="Sex" id="man"/><label for="man">Мужской</label>
+        <input type="radio" name="Sex" id="female"/><label for="female">Женский</label>
+        <input type="radio" name="Sex" id="neutral" checked="checked"/><label for="neutral">Неопределился:)</label><br/><br/>
+        Сколько Вам лет:<input type="text" size="3" maxlength="2"/>
+    </fieldset>
+</form>
+<form action="podrobnosti.php" methotd="post">
+    <fieldset>
+        <legend>
+            <font size="3"><strong>Подробнее о себе:</strong></font>
+        </legend>
+        <input type="radio" name="Type" id="devu"><label for="devu">Девушка</label><br/>
+        <p><input type="radio" name="Type" id="paren" checked="checked"/><label for="paren">Парень</label></p><br/>
+        <p><input type="text" size="25" maxlength="64"/>Дата рождения</p>
+        <p><input type="text" size="25" maxlength="64"/>Семейное положение</p>
+        <p><input type="text" size="25" maxlength="64"/>Социальный статус</p>
+        <p><input type="text" size="25" maxlength="64"/>Местожительство</p><br/>
+        <b>Что вы обычно делаете на выходных:</b>
+<p><input type="checkbox" name="son" id="Сплю"/><label for="Сплю">Сплю</label></p>
+<p><input type="checkbox" name="son" id="Играю"/><label for="Играю">Играю</label></p>
+        <p><input type="checkbox" name="son" id="Работаю"/><label for="Работаю">Работаю</label></p>
+        <p><input type="checkbox" name="son" id="Провожу время с семьей"/><label for="Провожу время с семьей">Провожу время с семьей</label></p><br/>
+        <b>Что будем завтра делать:</b>
+        <p><select name="menu" size="1"><br/>
+           <option selected="selected" value="first">Работать</option>
+           <option value="second">Изучать HTML</option>
+           <option value="third">долбаться в теккен))</option>
+        </select></p><br/>
+          <b>Сколько книг вы прочитали за всю жизнь:</b><br/>
+        <p><input type="radio" name="books" id="0-10"/><label for="0-10">0-10</label></p>
+        <p><input type="radio" name="books" id="11-20"/><label for="11-20">11-20</label></p>
+        <p><input type="radio" name="books" id="21-50"/><label for="21-50">21-50</label></p>
+        <p><input type="radio" name="books" id="51-500"/><label for="51-500">51-500</label></p>
+        <p><input type="radio" name="books" id="500+"/><label for="500+">500+</label></p><br/>
+        <p><b>Ваши комментарии:</b></p>
+<p><textarea name="comment" rows="10" cols="50" maxlength="1000"></textarea></p><br/>
+       <select name="menu2" size="3" multiple="multiple">
+           <option value=menu2>Фильмы</option><br/>
+           <option selected="selected" value=Игры>Игры</option><br/>
+           <option value=Музыка>Музыка</option><br/>
+           <option value=Книги>Книги</option>
+           </select>
+        </fieldset>
+</form>
+<form action="texdannue.php" methotd="post"><br/>
+    <fieldset>
+        <legend>
+            <font size="3"><strong>И в заключении</strong></font>
+        </legend>
+        <p><input type="text" size="31" disabled="disabled" value="Это поле было введено до вас"/></p>
+            <p><b>E-mail:</b></p>
+        <p><input type="text" size="31" maxlength="29"/></p><br/>
+        <p><b>Хотите подписаться на самую крутую рассылку спама?</b></p>
+        <p><i>Выберите категории</i></p><br/>
+        <p><input type="checkbox" name="kategorii" id="Оборудование"><label for="Оборудование">Оборудование</label></p>
+        <p><input type="checkbox" name="kategorii" id="Как приготовить обеды"><label for="Как приготовить обеды">Как приготовить обеды</label></p>
+        <p><input type="checkbox" name="kategorii" id="Заработай миллион за два дня!"><label for="Заработай миллион за два дня!">Заработай миллион за два дня!</label></p><br/>
+        <p><strong>Насколько сложная задача:</strong></p>
+        <p><input type="radio" name="level" id="Совсем нет" checked="checked"><label for="Совсем нет">Совсем нет</label></p>
+        <p><input type="radio" name="level" id="Так себе"><label for="Так себе">Так себе</label></p>
+        <p><input type="radio" name="level" id="Еле справились"><label for="Еле справились">Еле справились</label></p><br/>
+    </fieldset>
+        <p><input type="submit" value="Отправить"/></p>
+</form>
+</body>
+</html>
