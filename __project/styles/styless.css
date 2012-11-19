@@ -1,0 +1,66 @@
+p {
+    padding: 5px;
+    margin: 5px;
+}
+h1 {
+	color: white;
+	background-color: black;
+    padding: 7px;
+}
+span.u_red {
+    color: red;
+    text-decoration: underline; /* Подчеркивание */
+}
+span.bold {
+    font-weight: bold; /* жирный текст */
+}
+span.u {
+    font-style: italic; /* курсив */
+}
+#bold_1 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+#history {
+    border-width: medium;
+    border-color: green;
+    background-color: #dcdcdc; /* светло серый */
+    padding: 7px;
+    border-style: groove;
+    text-align: right;
+}
+#zelenka {
+    background-color: #006400;
+    color: yellow;
+    text-align: left;
+    font-size: medium;
+    border-width: 2px;
+    border-style: dashed;
+    border-left: hidden;
+    border-right: hidden;
+    padding: 20px;
+    margin: 20px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#kvadrat {
+    list-style-type: square;
+}
+#kryg {
+    list-style-type: circle;
+    font-size: 18px;
+}
+span.blue {
+    color: blue;
+    font-weight: bolder;
+}
+#black-yellow {
+    color: yellow;
+    background-color: black;
+    font-size: medium;
+    padding: 1px;
+    margin: 1px;
+    line-height: 30px;
+    font-size: 120%;
+}
